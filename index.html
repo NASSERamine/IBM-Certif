@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="formulaire.js"></script>
+    <title>Document</title>
+    <style>
+      .line {
+        display: flex;
+        align-items: center;
+      }
+      h4 {
+        margin-right: 10px;
+      }
+      button {
+        margin-left: 210px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to our Form</h1>
+    <br />
+    <form>
+      <div class="line">
+        <h4>First Name :</h4>
+        <input id="fname" type="text" />
+      </div>
+      <div class="line">
+        <h4>Last Name :</h4>
+        <input type="text" id="lname" />
+      </div>
+      <div class="line">
+        <h4>Birth date :</h4>
+        <input type="text" id="bd" />
+      </div>
+    </form>
+    <button id="submit" onclick="submitform()">Submit</button>
+    <button id="afficher" onclick="afficherliste()">Afficher Liste</button>
+
+    <ul id="lista"></ul>
+  </body>
+</html>
